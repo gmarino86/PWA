@@ -1,5 +1,5 @@
 const API_KEY = "ac313d72ccbe79ebc1acf7fff480f5be";
-const URL_WEATHER = "http://api.openweathermap.org/geo/1.0/direct?";
+const URL_WEATHER = "https://api.openweathermap.org/geo/1.0/direct?";
 const URL_WEATHER_CITY = "https://api.openweathermap.org/data/2.5/weather?"
 
 const BTN_BUSCAR = document.getElementById('btnBuscar')
