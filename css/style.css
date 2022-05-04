@@ -1,0 +1,13 @@
+body {
+    background: #ccd5ae;
+}
+.navbar {
+    background: #d4a373;
+}
+
+.divBuscador {
+    padding: 1rem;
+    background: #fefae0;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
