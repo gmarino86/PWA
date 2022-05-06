@@ -6,11 +6,14 @@ const BTN_BUSCAR = document.getElementById('btnBuscar')
 const INPUT_TEXT = document.getElementById('inputText')
 
 
+
 BTN_BUSCAR.addEventListener("click", () => {
     let ciudad = INPUT_TEXT.value
 
     fetchCiudad(ciudad)
         .then(function (ciudades) {
+            //console.log(JSON.stringify(ciudades)
+            localStorage.setItem('city', JSON.stringify(ciudades))
             armarInfo(ciudades)
         })
         .catch(function (err) {
@@ -117,3 +120,15 @@ function crearModal(c)
 
     myModal.show()
 }
+
+
+
+function verLocalStorage()
+{
+    let ciudades = localStorage.getItem('city') 
+    if(ciudades != ''){
+        armarInfo(JSON.parse(ciudades))
+    }
+}
+
+verLocalStorage()
