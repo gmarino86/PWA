@@ -1,13 +1,35 @@
 body {
-    background: #ccd5ae;
+  background: #023047;
 }
 .navbar {
-    background: #d4a373;
+  background: #d4a373;
 }
 
 .divBuscador {
-    padding: 1rem;
-    background: #fefae0;
-    margin-top: 1rem;
-    border-radius: 10px;
+  padding: 1rem;
+  background: #FB8500;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+#video_background {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+#video_pattern {
+  background: #fff;
+  position: fixed;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
